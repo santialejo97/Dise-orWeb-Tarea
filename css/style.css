@@ -12,11 +12,9 @@ body {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #527885;
 }
+
 .container {
   padding: 10px;
   border: 2px solid #908c96;
@@ -70,4 +68,53 @@ span {
 .flex {
   display: flex;
   flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 10px;
+}
+
+canvas {
+  width: 100%;
+}
+
+.campos {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.dias {
+  height: 30px;
+  text-align: center;
+}
+.dia {
+  text-align: center;
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.cuerpo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 10px;
+}
+
+.uno {
+  grid-column: 2/3;
+}
+
+.cabecera .dias:nth-child(2n + 1) {
+  background-color: #a50031;
+}
+
+span {
+  font-style: italic;
 }

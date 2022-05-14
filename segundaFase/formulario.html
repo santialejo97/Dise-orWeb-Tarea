@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/f6776fd93e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <nav style="text-align: center">
+        <a style="text-decoration: none; color: #ffffff" href="../index.html"
+          ><i class="fa-solid fa-arrow-right"></i> Segunda Fase
+          <i class="fa-solid fa-arrow-left"></i
+        ></a>
+      </nav>
+    </header>
+    <div
+      class="formulario"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div style="margin-top: 50px">
+        <h2>Registro de Citas Medicas</h2>
+        <form action="./formulario.html" autocomplete="off">
+          <div class="campos" style="margin-top: 20px">
+            <label for="nombres" style="margin-right: 10px">Nombres</label>
+            <input type="text" id="nombres" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="primerapellido" style="margin-right: 10px"
+              >Primer Apellido</label
+            >
+            <input type="text" id="primerapellido" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="segundopellido" style="margin-right: 10px"
+              >Segundo Apellido</label
+            >
+            <input type="text" id="segundopellido" />
+          </div>
+          <div class="campos" style="display: flex; margin-top: 20px">
+            <label for="edad" style="margin-right: 10px">Menor de Edad</label>
+            <div style="display: flex">
+              <div style="margin-right: 20px">
+                <label for="no">No</label>
+                <input type="radio" id="no" value="no" name="edad" />
+              </div>
+              <div>
+                <label for="si">Si</label>
+                <input type="radio" id="si" value="no" name="edad" />
+              </div>
+            </div>
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="documento" style="margin-right: 10px">Documento</label>
+            <input type="number" id="documento" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="cuidad" style="margin-right: 10px">Cuidad</label>
+            <input type="text" id="cuidad" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="telefono" style="margin-right: 10px"
+              >Telefono Casa</label
+            >
+            <input type="number" id="telefono" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="celular" style="margin-right: 10px">Celular</label>
+            <input type="number" id="celular" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="direccion" style="margin-right: 10px">Dirección</label>
+            <input type="text" id="direccion" />
+          </div>
+        </form>
+        <h2>Datos de la cita</h2>
+        <form action="./formulario.html" autocomplete="off">
+          <div class="campos" style="margin-top: 20px">
+            <label for="cuidad" style="margin-right: 10px">Cuidad</label>
+            <input type="text" id="cuidad" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="departamento" style="margin-right: 10px"
+              >Departamento</label
+            >
+            <input type="text" id="departamento" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="tipo" style="margin-right: 10px">Tipo de cita</label>
+            <select id="tipo">
+              <option value="" selected disabled>
+                ---Seleccione un tipo---
+              </option>
+              <option value="presencial">Presencial</option>
+              <option value="vitual">Virtual</option>
+            </select>
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="fecha" style="margin-right: 10px">Fecha cita</label>
+            <input type="date" id="fecha" />
+          </div>
+          <div class="campos" style="margin-top: 20px">
+            <label for="centro" style="margin-right: 10px">Centro Medico</label>
+            <select id="centro">
+              <option value="" selected disabled>
+                ---Seleccione un tipo---
+              </option>
+              <option value="presencial">
+                Hospital General - Barrio la laguna
+              </option>
+              <option value="vitual">
+                Hospital Infantil - Barrio El diamante
+              </option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section
+      class="calentario_container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      "
+    >
+      <div
+        class="calendario"
+        style="border: 2px solid black; padding: 10px 10px"
+      >
+        <div class="cabecera" style="display: flex; gap: 10px">
+          <div class="dias">
+            <h2>Lunes</h2>
+          </div>
+          <div class="dias">
+            <h2>Martes</h2>
+          </div>
+          <div class="dias">
+            <h2>Miercoles</h2>
+          </div>
+          <div class="dias">
+            <h2>Jueves</h2>
+          </div>
+          <div class="dias">
+            <h2>Viernes</h2>
+          </div>
+          <div class="dias">
+            <h2>Sabado</h2>
+          </div>
+          <div class="dias">
+            <h2>Domingo</h2>
+          </div>
+        </div>
+        <div class="cuerpo">
+          <p class="dia uno">1</p>
+          <p class="dia">2</p>
+          <p class="dia">3</p>
+          <p class="dia">4</p>
+          <p class="dia">5</p>
+          <p class="dia">6</p>
+          <p class="dia">7</p>
+          <p class="dia">8</p>
+          <p class="dia">9</p>
+          <p class="dia">10</p>
+          <p class="dia">11</p>
+          <p class="dia">12</p>
+          <p class="dia">13</p>
+          <p class="dia">14</p>
+          <p class="dia">15</p>
+          <p class="dia">16</p>
+          <p class="dia">17</p>
+          <p class="dia">18</p>
+          <p class="dia">19</p>
+          <p class="dia">20</p>
+          <p class="dia">21</p>
+          <p class="dia">22</p>
+          <p class="dia">23</p>
+          <p class="dia">24</p>
+          <p class="dia">25</p>
+          <p class="dia">26</p>
+          <p class="dia">27</p>
+          <p class="dia">28</p>
+          <p class="dia">29</p>
+          <p class="dia">30</p>
+          <p class="dia">31</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
